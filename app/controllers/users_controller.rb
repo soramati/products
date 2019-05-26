@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 	skip_before_action :login_required
 	def create
-		puts "create"
+		puts "create!"
 		user = User.new(name: get_user_name)
 		puts get_user_name
 		user.save!
@@ -21,7 +21,7 @@ class UsersController < ApplicationController
 		while count < 100
 			
 			a = []
-			10.times do
+			8.times do
 				a.push(rand(9))
 			end
 
