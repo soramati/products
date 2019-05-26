@@ -1,0 +1,65 @@
+// Place all the styles related to the cards controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$main_color : #5EBAB9;
+
+.card-group{
+	width: 100%;
+	display: flex;
+	margin: 20px 0px;
+	justify-content: space-between;
+	.delete_btn{
+		width: 10%;
+		padding-left:  20px;
+		i{
+		font-size: 2em;
+		color: #333;
+		line-height:50px;
+		}
+	}
+	.title{
+		border:solid 2px #333;
+		width: 80%;
+		font-size: 1.2rem;
+		text-align: center;
+		line-height: 50px;
+		height:50px;
+		font-weight: bold;
+	}
+}
+.list{
+	min-height: 50vh;
+	padding:30px 0; 
+}
+
+.submit_btn{
+	input{
+	background-color: $main_color;
+	color:#fff;
+	width: 100%;
+	height:40px;
+	border:solid 0px;
+	}
+}
+
+	
+@media (max-width:990px) {
+	.card-group{
+
+		.title{
+			height: 100px;
+			line-height:100px;
+			font-size: 2em;
+
+		}
+		.delete_btn{
+			width: 20%;
+				font-size:1.3em;
+			i{
+				padding-left:20px;
+				line-height:100px;
+
+			}
+		}
+	}
+}

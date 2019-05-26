@@ -1,0 +1,24 @@
+.pc_frame
+  #update
+    h1 ＿＿＿＿＿は、これが好き！
+    .list.table
+        - @cards.each do |card|
+          =form_with model: card,url: "card/#{card.id}" do |form|
+            .card-group
+              .title= card.title
+              .delete_btn = link_to "card/#{card.id}", method: :delete do
+                  = fa_icon("times")
+
+
+
+  #new
+    .new_box
+      =form_with model: @card,url: "/create" do |form|
+        .form-group
+          =form.label :"好きなモノ・コト"
+          =form.text_field :title,class: :"form-control"
+        .form-group
+          .submit_btn =form.submit(['追加'])
+  a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="「LIKE IT」は、自分が大好きなモノ・コトを、教え合っちゃうサービスです。" data-via="http://localhost:3000/welcome" data-show-count="false" Tweet 
+  javascript:
+    async src="https://platform.twitter.com/widgets.js" charset="utf-8"

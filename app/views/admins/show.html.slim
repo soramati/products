@@ -1,0 +1,45 @@
+	h1 Admin show
+	h3 user
+	table.table
+	  thead.thead-dark
+	    tr
+	      th scope="col" id
+	      th scope="col" name
+	      th scope="col" created_at
+	      th scope="col" updated_at
+	      th scope="col" 
+	      th
+	  tbody
+	
+		    tr
+		      th scope="row"
+		      		=@user.id
+		      td  
+		      		=@user.name
+		      td  
+		      		=@user.created_at
+		      td  
+		      		=@user.updated_at
+		      td 
+	h3 card   	
+	table.table
+		  thead.thead-dark
+		    tr
+		      th scope="col" id
+		      th scope="col" title
+		      th scope="col" created_at
+		      th scope="col" updated_at
+		      th scope="col" 
+		      th
+		  tbody
+			- @cards.each do |card| 
+			    tr
+			      th scope="row"
+			      		=card.id
+			      td  
+			      		=card.title
+			      td  
+			      		=card.created_at
+			      td  
+			      		=card.updated_at
+			      

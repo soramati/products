@@ -1,0 +1,29 @@
+	h1 Admin page
+ 	=link_to 'リセット',"admins/all/destroy", method: :delete, data:{confirm: "リセットしますがよろしいですか？"},class:'btn btn-danger' 
+	table.table
+	  thead.thead-dark
+	    tr
+	      th scope="col" id
+	      th scope="col" name
+	      th scope="col" created_at
+	      th scope="col" updated_at
+	      th scope="col" 
+	      th
+	  tbody
+		- @users.each do |user| 
+		    tr
+		      th scope="row"
+		      	a href="admins/#{user.id}" 
+		      		=user.id
+		      td  
+		      	a href="admins/#{user.id}" 
+		      		=user.name
+		      td  
+		      	a href="admins/#{user.id}"
+		      		=user.created_at
+		      td  
+		      	a href="admins/#{user.id}"
+		      		=user.updated_at
+		      td 
+		      	=link_to '削除',"admins/#{user.id}", method: :delete, data:{confirm: "削除しますがよろしいですか？"},class:'btn btn-danger' 
+
