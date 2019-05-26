@@ -1,18 +1,18 @@
 doctype html
 html
   head
-    title
-      | Likeit
-    = csrf_meta_tags
-    = csp_meta_tag
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     <meta name="twitter:card" content="summary_large_imag"/> 
     <meta name="twitter:site" content="@soramatiliku"/>
     <meta property="og:url" content="https://likeitlist.herokuapp.com/" />
     <meta property="og:title" content="Likeit" />
     <meta property="og:description" content="「LIKE IT」は、自分が大好きなモノ・コトを、教え合っちゃうサービスです。" />
     <meta property="og:image" content="app/assets/images/mojilikeit.png" />
+    title
+      | Likeit
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
 	  nav.header.navbar.navbar-expand-lg.navbar-light.navbar-dark
 	  	= link_to 'LIKE IT',root_path, class: 'navbar-brand'
