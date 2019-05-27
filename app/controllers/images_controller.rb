@@ -1,7 +1,6 @@
 class ImagesController < ApplicationController
 	require 'rubygems'
-	require 'rmagick' # require してライブラリを読み込み
-
+	require 'rmagick'
 
 	def create
 		cards = Card.where(user_id: get_current_user.name)
@@ -19,9 +18,14 @@ class ImagesController < ApplicationController
 		  self.pointsize = 80
 		  self.gravity   = Magick::NorthWestGravity
 		end
-
-
-		scaled_img.write("app/assets/images/mojilikeit.png") # save to file
+		name = get_current_user.name
+		scaled_img.write("app/assets/images/mojilikeit#{name}.png") # save
 		redirect_to "/"
+	end
+
+
+	private 
+	def count 
+		count += 1		
 	end
 end
