@@ -70,3 +70,4 @@ gem 'bootstrap'
 gem 'jquery-rails'
 gem "font-awesome-rails"
 gem "rmagick"
+gem "aws-sdk-s3", require: false
