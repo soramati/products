@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/images/:id',to: "images#show"
   get 'images/create', to: 'images#create'
   get 'administrator/login', to:"sessions#new"
   post 'administrator/login', to:"sessions#login"

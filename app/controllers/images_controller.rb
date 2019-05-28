@@ -23,4 +23,8 @@ class ImagesController < ApplicationController
 		redirect_to "/"
 	end
 
+	def show
+		@image_name = params[:id]
+	end
+
 end
