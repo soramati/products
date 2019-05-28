@@ -19,8 +19,9 @@
           =form.text_field :title,class: :"form-control"
         .form-group
           .submit_btn =form.submit(['追加'])
-
+p
+.btn
+  a href="https://likeitlist.herokuapp.com/images/create" create
+p
 a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-url="https://likeitlist.herokuapp.com/images/#{get_current_user.name}" data-lang="en" data-show-count="false">Tweet
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
- 
