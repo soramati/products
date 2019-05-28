@@ -19,7 +19,7 @@ class ImagesController < ApplicationController
 		  self.gravity   = Magick::NorthWestGravity
 		end
 		name = get_current_user.name
-		scaled_img.write("public/images/mojilikeit/#{name}.png") # save
+		scaled_img.write("public/images/mojilikeit#{name}.png") # save
 		redirect_to "/"
 	end
 
