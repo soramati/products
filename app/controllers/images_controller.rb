@@ -1,6 +1,7 @@
 class ImagesController < ApplicationController
 	require 'rubygems'
 	require 'rmagick'
+	skip_before_action :login_required
 
 	def create
 		puts "==============================="
