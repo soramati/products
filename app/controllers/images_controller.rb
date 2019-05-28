@@ -3,6 +3,7 @@ class ImagesController < ApplicationController
 	require 'rmagick'
 
 	def create
+		puts "==============================="
 		cards = Card.where(user_id: get_current_user.name)
 		card1 = cards[0]
 		text1 = card1.title
