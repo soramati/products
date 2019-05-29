@@ -1,8 +1,8 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-$main_color: #5EBAB9;
-
+$main_color : #AAD6EC;
+$sub_color :#EB8686;
 #welcome{
 	width: 85%;
 	margin: 30vh auto;
@@ -18,7 +18,7 @@ $main_color: #5EBAB9;
 	.btn-like{
 		 font-size: 1.5em;
 		 padding: 15px 20px;
-		 background-color: $main_color;
+		 background-color: $sub_color;
 		 color: #fff;
 	}
 }

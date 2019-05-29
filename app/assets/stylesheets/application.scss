@@ -16,7 +16,7 @@
  */
 @import "bootstrap";
 @import "font-awesome";
-$main_color : #5EBAB9;
+$main_color : #AAD6EC;
 
 .header{
 	background-color: $main_color;
@@ -31,17 +31,30 @@ $main_color : #5EBAB9;
 	margin: 0 auto;
 	max-width: 700px;
 	h1{
-		font-size: 1.3em;
+		font-size: 1.8em;
 	} 
 
 }
 
 	
 @media (max-width:990px) {
+	.header{
+		height: 7vh;
+		font-size: 1.6rem;
+		a{
+		font-size: 2.3rem;
+
+		}
+	}
 	.pc_frame{
 		width: 80%;
-		height: 100vh
+		height: 100vh;
+		label{
+		font-size: 1.8rem;
+
+		}
 
 	}
+
 	
 }

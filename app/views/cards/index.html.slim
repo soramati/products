@@ -1,6 +1,6 @@
 .pc_frame
   #update
-    h1 ＿＿＿＿＿は、これが好き！
+    h1 __________は、これが好き！
     .list.table
         - @cards.each do |card|
           =form_with model: card,url: "card/#{card.id}" do |form|
@@ -17,8 +17,10 @@
         .form-group
           =form.label :"好きなモノ・コト"
           =form.text_field :title,class: :"form-control"
-        .form-group
+        .form-group.add
           .submit_btn =form.submit(['追加'])
+        .form-group.complete
+          .submit_btn =form.submit(['完成'])
 p
 .btn
   a href="/images/create" create
