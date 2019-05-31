@@ -1,0 +1,6 @@
+    #confirm
+      .img_box
+        = image_tag("/images/#{get_current_user.name}.png",:id=>"modal_img")
+  
+	  a href="https://twitter.com/intent/tweet?text=〇〇が好きだ!!&url=https://likeitlist.herokuapp.com/#{get_current_user.name}/&related=@soramatiriku" target="_blank" rel="nofollow"
+

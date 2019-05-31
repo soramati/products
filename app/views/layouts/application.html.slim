@@ -3,18 +3,17 @@ html
   head
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@twitterID" />
-  <meta name="twitter:title" content=私の好きなもの />
-  <meta name="twitter:description" content="「好きなものリスト」は、自分が大好きなモノ・コトを、教え合っちゃうサービスです。" />
+  <meta name="twitter:title" content="が、好きだ！！" />
   <meta name="twitter:image" content="https://likeitlist.herokuapp.com/images/#{ @image_name}.png" />
     title
-      | 好きなものリスト
+      | LIKE / さあ、好きを叫ぼう。
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
 	  nav.header.navbar.navbar-expand-lg.navbar-light.navbar-dark
-	  	= link_to 'LIKE IT',root_path, class: 'navbar-brand'
+	  	= link_to 'LIKE',root_path, class: 'navbar-brand'
         -if current_user
            = link_to "ログアウト",logout_path,method: :delete
            

@@ -14,6 +14,33 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
-//= require jquery3
 //= require popper
 //= require bootstrap-sprockets
+//= require jquery3
+//= require jquery_ujs
+//= require cards
+
+document.addEventListener('turbolinks:load', function(){
+	$(document).on("ajax:success", function() {
+
+	document.getElementById('modal_iframe').contentWindow.location.replace('card/modal');
+
+	    var navClass = $(this).attr("class"),
+	        id = $(this).attr("id");
+		            
+	        $("#modal").fadeIn();
+		    $(this).addClass("open");
+		    return false;
+		});
+		 
+		$(".modalClose").click(function(){
+		    $(this).parents(".modal").fadeOut();
+		    $(".modalOpen").removeClass("open");
+		    return false;
+		}); 
+
+
+});
+
+
+		        

@@ -5,20 +5,30 @@ $main_color : #AAD6EC;
 $sub_color :#EB8686;
 #welcome{
 	width: 85%;
-	margin: 30vh auto;
-		text-align: center;
-
+	margin: 21vh auto;
+	text-align: center;
+	.pc_frame{
+		padding-top: 10vh;
+	}
 	.description{
-		height: 30vh;
+		height: 38vh;
 		h2{
-		 font-size: 4em;
+		 font-size: 5em;
+		 font-weight: bold;
+		 margin-bottom: 3vh;
+		}
+		p{
+			font-size:1.4rem;
 		}
 	}
 
 	.btn-like{
-		 font-size: 1.5em;
+		 font-size: 4.5em;
 		 padding: 15px 20px;
 		 background-color: $sub_color;
 		 color: #fff;
+		 width:67%;
+		 height: 16vh;
+		 line-height: 13vh;
 	}
 }

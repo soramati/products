@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'card/modal',to: "cards#modal"
   get 'images/create', to: 'images#create'
   get 'images/:id',to: 'images#show'
   get 'administrator/login', to:"sessions#new"

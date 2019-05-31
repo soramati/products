@@ -4,7 +4,6 @@ class ImagesController < ApplicationController
 	skip_before_action :login_required
 
 	def create
-		puts "==============================="
 		cards = Card.where(user_id: get_current_user.name)
 		card1 = cards[0]
 		text1 = card1.title
@@ -21,7 +20,8 @@ class ImagesController < ApplicationController
 		end
 		name = get_current_user.name
 		scaled_img.write("public/images/#{name}.png") # save
-		redirect_to "/"
+		puts "create!!!"
+	    head :no_content
 	end
 
 	def show

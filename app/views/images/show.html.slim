@@ -1,4 +1,4 @@
-h1 show
-h2 = @image_name 
-a src="https://likeitlist.herokuapp.com/images/#{@image_name}.png"
-img src="https://likeitlist.herokuapp.com/images/#{@image_name}.png"
+#show
+	.img_box
+		img src="https://likeitlist.herokuapp.com/images/#{@image_name}.png"
+	= link_to 'Top','/welcome', class: "btn-like btn"

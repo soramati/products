@@ -3,77 +3,133 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $main_color : #AAD6EC;
 $sub_color :#EB8686;
-.card-group{
-	width: 100%;
-	display: flex;
-	margin: 20px 0px;
-	justify-content: space-between;
-	.delete_btn{
-		i{
-		font-size: 2.8em;
-		color: #333;
-		line-height:80px;
-		}
-	}
-	.title{
-		border:solid 5px $main_color;
-		width: 85%;
-		font-size: 1.2rem;
-		text-align: center;
-		line-height: 50px;
-		height:50px;
-		font-weight: bold;
-		margin-left: 5%;
-	}
-}
-.list{
-	min-height: 50vh;
-	padding:30px 0; 
-}
 
 .submit_btn{
 	margin: 40px 0;
 	input{
 	color:#fff;
 	width: 100%;
-	height:137px;
+	height:252px;
 	border:solid 0px;
-	font-size: 2.9rem;
+	font-size: 5.9rem;
 	font-weight:bold;
 	}
 }
-.add{
-	input{
-	background-color: $main_color;
-	}
-}
+
 
 .complete{
 	input{
 	background-color: $sub_color;
+
 	}
 }
-#card_title{
-	font-size: 3rem;
-}
-	
-@media (max-width:990px) {
-
-	.card-group{
-
-		.title{
-			height: 144px;
-			line-height:128px;
-			font-size: 3.5em;
-
+.pc_frame{
+	padding-top: 5vh;
+		h2{
+			font-size:3rem;
+			font-weight:bold;
 		}
-		.delete_btn{
-				font-size:1.3em;
-			i{
-				padding-left:20px;
-				line-height:128px;
-
+	.card_input{
+		height: 39vh;
+		#card_title{
+			margin-top: 12vh;
+			font-size: 7rem;
+			font-weight:bold;
+		}
+		.text{
+			display: flex;
+			justify-content:flex-end;
+			margin-top:30px;
+			margin-right: -30px;
+			h3{
+				font-size:3.75rem;
+				font-weight:bold;
 			}
 		}
+	}
+		
+}
+#confirm{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #fff;
+	width: 100%;
+	height: 100vh;
+	margin:0 auto;
+	position: absolute;
+	top:0vh;
+	.img_box{
+		margin-top:-10vh;
+		width:80%;
+		img{
+			width:100%;
+		}
+	}
+		.btn-like{
+		 font-size: 4.5em;
+		 padding: 15px 20px;
+		 background-color: $main_color;
+		 color: #fff;
+		 width:67%;
+		 height: 12vh;
+		 line-height: 8vh;
+		 margin-top:10vh;
+	}
+}
+
+//////////////////////////////////
+// modal//////////////////////////
+//////////////////////////////////
+body {
+  position:relative;
+}
+ 
+/* モーダルウィンドウのスタイル */
+.modal {
+  position:absolute;
+  width:100%;
+  height:100vh;
+  top:0;
+  left:0;
+  display:none;
+}
+ 
+/* オーバーレイのスタイル */
+.overLay {
+  position:absolute;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,0.7);
+  width:100%;
+  height:100vh;
+  z-index:10;
+}
+ 
+/* モーダルウィンドウの中身のスタイル */
+.inner{
+	  position:absolute;
+	  z-index:11;
+	  top:50%;
+	  left:50%;
+	  transform:translate(-50%,-50%);
+	  background-color:#fff;
+	  width:85%;
+	  max-width: 600px;
+	  height: 55vh;
+}
+
+#confirm{
+	a{
+		 font-size: 4.5em;
+		 padding: 15px 20px;
+		 background-color: $main_color;
+		 color: #fff;
+		 width:67%;
+		 height: 12vh;
+		 line-height: 8vh;
+		 margin-top:10vh;
+		 text-align: center;
 	}
 }
