@@ -15,10 +15,9 @@
 //= require turbolinks
 //= require_tree .
 //= require popper
-//= require bootstrap-sprockets
 //= require jquery3
 //= require jquery_ujs
-//= require cards
+//= require bootstrap-sprockets
 
 document.addEventListener('turbolinks:load', function(){
 	$(document).on("ajax:success", function() {
