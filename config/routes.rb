@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'card/modal',to: "cards#modal"
   get 'images/create', to: 'images#create'
-  get 'images/:id',to: 'images#show'
+  get 'images/:id',to: 'welcome#index'
   get 'administrator/login', to:"sessions#new"
   post 'administrator/login', to:"sessions#login"
   resources :admins
