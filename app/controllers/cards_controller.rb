@@ -11,7 +11,6 @@ class CardsController < ApplicationController
     card.user_id = get_current_user.name.to_i
   	card.save!
     createImage
-
     head :no_content
   end
   def update
@@ -43,12 +42,19 @@ class CardsController < ApplicationController
     img = Magick::ImageList.new("app/assets/images/likeit.jpg")
     scaled_img = img.scale(382 , 199)
 
+    if text1.length < 4
+      font_size = 60
+    else
+      font_size = 50
+    end
+
+        
     font = "app/assets/fonts/GenEiNuGothic-EB.ttf"
     draw = Magick::Draw.new
     draw.annotate(scaled_img, 0, 0, -6, 6, text1) do
       self.font      = font
       self.stroke    = 'transparent'
-      self.pointsize = 50
+      self.pointsize = font_size
       self.gravity   = Magick::CenterGravity
     end
     name = get_current_user.name

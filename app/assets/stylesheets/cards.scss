@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $main_color : #AAD6EC;
-$sub_color :#EB8686;
+$sub_color :#FF9800  ;
 
 .submit_btn{
 	margin: 40px 0;
@@ -14,7 +14,7 @@ $sub_color :#EB8686;
 	font-size: 5.9rem;
 	font-weight:bold;
 	color: #FFF;
-	border-bottom: solid 10px #bc5f5e;
+	border-bottom: solid 10px #c97c00;
 	border-radius: 3px;
 	}
 }
@@ -63,6 +63,10 @@ $sub_color :#EB8686;
 	margin:0 auto;
 	position: absolute;
 	top:0vh;
+	.confirm_title{
+		margin-top:-10vh;
+		margin-bottom:15vh;
+	}
 	.img_box{
 		width:80%;
 		img{

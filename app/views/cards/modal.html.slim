@@ -1,6 +1,7 @@
     #confirm
+      h1.confirm_title 確認
       .img_box
         = image_tag("/images/#{get_current_user.name}.png",:id=>"modal_img")
   
-	  a class="btn-like"href="https://twitter.com/intent/tweet?text=〇〇が好きだ!!&url=https://likeitlist.herokuapp.com/images/#{get_current_user.name}/&related=@soramatiriku" target="_blank" rel="nofollow" Twitter
+	  a class="btn-like"href="https://twitter.com/intent/tweet?&url=https://likeitlist.herokuapp.com/images/#{get_current_user.name}/&related=@soramatiriku" target="_blank" rel="nofollow" Twitter
 

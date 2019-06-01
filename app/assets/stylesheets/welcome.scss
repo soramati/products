@@ -1,8 +1,9 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-$main_color : #AAD6EC;
-$sub_color :#EB8686;
+$main_color : #2E2E2E ;
+$sub_color :#FF9800  ;
+
 #welcome{
 	width: 85%;
 	margin: 21vh auto;
@@ -11,11 +12,13 @@ $sub_color :#EB8686;
 		padding-top: 10vh;
 	}
 	.description{
-		height: 38vh;
+		margin-top:-92px;
+		height: 43vh;
 		h2{
 		 font-size: 5em;
 		 font-weight: bold;
 		 margin-bottom: 3vh;
+
 		}
 		p{
 			font-size:1.4rem;
@@ -34,7 +37,7 @@ $sub_color :#EB8686;
 		 padding: 0.5em 1em;
 		 text-decoration: none;
 		 color: #FFF;
-		 border-bottom: solid 10px #bc5f5e;
+		 border-bottom: solid 10px #e08600;
 		 border-radius: 3px;
 	}
 }

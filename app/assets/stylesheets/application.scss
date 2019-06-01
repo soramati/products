@@ -16,7 +16,16 @@
  */
 @import "bootstrap";
 @import "font-awesome";
-$main_color : #AAD6EC;
+$main_color : #2E2E2E ;
+
+ @font-face{
+   font-family: "GenEiNuGothic-EB";
+   src: font-url('GenEiNuGothic-EB.ttf') format('truetype');
+ }
+p,a,h1,h2,h3{
+	font-family: 'GenEiNuGothic-EB';
+}
+
 
 .header{
 	background-color: $main_color;

@@ -1,12 +1,11 @@
 .pc_frame
-  h2 好きを叫ぼう。
+  h2 ドドーンと叫ぼう。
   #new
     .new_box
       =form_with model: @card,url: "/create" do |form|
         .form-group.card_input
           =form.text_field :title,class: :"form-control"
           .text
-            h3 が、好きだ！!
         .form-group.complete
           .submit_btn =form.submit(['確認']) 
 #modal.modal
