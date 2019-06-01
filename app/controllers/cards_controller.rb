@@ -10,24 +10,8 @@ class CardsController < ApplicationController
   	card = Card.new(card_params)
     card.user_id = get_current_user.name.to_i
   	card.save!
+    createImage
 
-    cards = Card.where(user_id: get_current_user.name)
-    card1 = cards[0]
-    text1 = card1.title
-    img = Magick::ImageList.new("app/assets/images/likeit.png")
-    scaled_img = img.scale(600, 314)
-
-    font = "app/assets/fonts/Makinas-4-Square.otf"
-    draw = Magick::Draw.new
-    draw.annotate(scaled_img, 0, 0, 50, 115, text1) do
-      self.font      = font
-      self.stroke    = 'transparent'
-      self.pointsize = 80
-      self.gravity   = Magick::NorthWestGravity
-    end
-    name = get_current_user.name
-    scaled_img.write("public/images/#{name}.png") # save
-    puts "create!!!"
     head :no_content
   end
   def update
@@ -48,5 +32,26 @@ class CardsController < ApplicationController
   end
   def card_params
   	params.require(:card).permit(:title)
+  end
+
+
+  def createImage
+
+    cards = Card.where(user_id: get_current_user.name)
+    card1 = cards[0]
+    text1 = card1.title
+    img = Magick::ImageList.new("app/assets/images/likeit.jpg")
+    scaled_img = img.scale(382 , 199)
+
+    font = "app/assets/fonts/GenEiNuGothic-EB.ttf"
+    draw = Magick::Draw.new
+    draw.annotate(scaled_img, 0, 0, -6, 6, text1) do
+      self.font      = font
+      self.stroke    = 'transparent'
+      self.pointsize = 50
+      self.gravity   = Magick::CenterGravity
+    end
+    name = get_current_user.name
+    scaled_img.write("public/images/#{name}.png") # save
   end
 end

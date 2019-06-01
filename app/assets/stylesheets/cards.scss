@@ -13,6 +13,9 @@ $sub_color :#EB8686;
 	border:solid 0px;
 	font-size: 5.9rem;
 	font-weight:bold;
+	color: #FFF;
+	border-bottom: solid 10px #bc5f5e;
+	border-radius: 3px;
 	}
 }
 
@@ -61,7 +64,6 @@ $sub_color :#EB8686;
 	position: absolute;
 	top:0vh;
 	.img_box{
-		margin-top:-10vh;
 		width:80%;
 		img{
 			width:100%;
@@ -70,12 +72,15 @@ $sub_color :#EB8686;
 		.btn-like{
 		 font-size: 4.5em;
 		 padding: 15px 20px;
-		 background-color: $main_color;
+		 background-color: #50A5E6;
 		 color: #fff;
 		 width:67%;
 		 height: 12vh;
 		 line-height: 8vh;
 		 margin-top:10vh;
+ 		 color: #FFF;
+		 border-bottom: solid 10px #4488c4;
+		 border-radius: 3px;
 	}
 }
 
@@ -86,7 +91,6 @@ body {
   position:relative;
 }
  
-/* モーダルウィンドウのスタイル */
 .modal {
   position:absolute;
   width:100%;
@@ -96,7 +100,6 @@ body {
   display:none;
 }
  
-/* オーバーレイのスタイル */
 .overLay {
   position:absolute;
   top:0;
@@ -107,7 +110,6 @@ body {
   z-index:10;
 }
  
-/* モーダルウィンドウの中身のスタイル */
 .inner{
 	  position:absolute;
 	  z-index:11;
@@ -115,9 +117,9 @@ body {
 	  left:50%;
 	  transform:translate(-50%,-50%);
 	  background-color:#fff;
-	  width:85%;
-	  max-width: 600px;
-	  height: 55vh;
+	  width:95%;
+	  max-width: 1000px;
+	  height: 72vh;
 }
 
 #confirm{
