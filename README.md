@@ -2,8 +2,7 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-![demo](https://raw.github.com/wiki/soramati/products/images/m56vv-dki5f.gif)
- 
+gif -> https://raw.github.com/wiki/soramati/products/images/m56vv-dki5f.gif
 
 # SAKEBU/ドドーンと叫ぼう
 Twitterと連携したWEBアプリです。Ping質問箱のように、アプリ内でテキストを画像に変換し、Twitterカードで表示させることができます。
