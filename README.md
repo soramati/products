@@ -15,3 +15,4 @@ rmagick 3.1.0
 
 # References
 RMagickの使い方: https://qiita.com/scleen_x_x/items/14a80fd52e41dfcfb660
+# rails-app-sakebu
